@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif;
+    color: #ffffff;
+}
+
+.container{
+	width: 100%;
+	height: 100vh;
+	background-image:linear-gradient(#000000bf,#000000bf), url(images/back-img.jpg);
+	background-size: cover;
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 100px;
+    cursor: pointer;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.navbar ul li a:hover{
+    color: rgb(84, 96, 145);
+}
+.navbar ul li::after{
+        content: '';
+        height: 3px;
+        width:0;
+        background: #ececed;
+        position: absolute;
+        left:0;
+        bottom: -10px;
+        
+}
+
+.navbar ul li:hover::after{
+    width : 100%;
+}
+
+h2{
+    margin-left: 20px;
+}
+
+.content{
+    width: 100%;
+    position: relative;
+    top: 30%;
+    transform: translateY(-50%);
+    text-align: left;
+    color: white;
+    margin: 0 ;
+}
+
+.data{
+    margin: 20px 900px 40px 20px;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+#register{
+    width: 45%;
+    margin: auto;
+    position: absolute;
+    top: 30%;
+    left: 60%;
+}
+
+#reg-input{
+    width: 60%;
+    font-size: medium;
+    font-weight: medium;
+    padding: 1rem;
+    background-color: #ffffff;
+    
+    border-radius: .5rem;
+    border: 1.5px solid;
+    outline: none;
+}
+
+button{
+        width: 200px;
+        padding: 15px 0;
+        text-align: center;
+        margin:20px 10px;
+        border-radius: .5rem;
+        font-weight: bold;
+        border:  2px solid #ffffff;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        background: transparent;
+        color: #fff;
+        
+}
+
+
+button:hover{
+    border: none;
+    background: #ffffff;
+    color: black;
+}
+
+.footer{
+    width: 85%;
+    margin-left: 8%;
+    display: inline-block;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 94%;
+    font-size: x-small;
+}
+
+.footer img{
+    height: 20px;
+    width: 20px;
+    margin: 0 10px;
+    float: right;
+}
+
